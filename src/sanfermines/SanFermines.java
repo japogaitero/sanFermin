@@ -20,21 +20,20 @@ public class SanFermines {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-    
         // TODO code application logic here
-      
+    
     Scanner teclado = new Scanner(System.in);
     int Vtoros,Ntoros,carreras;
     int Vcorredor=0;
     System.out.println ("Dime cuantas carreras vamos a analizar");
     carreras = teclado.nextInt();
     for (int i=1; i<=carreras; i++){    
-        if (carreras>1){
+        if (carreras>=1){
             System.out.println ("Dime cuantos toros corren esta vez");
             Ntoros = teclado.nextInt();
             System.out.println ("Dime la velocidad de todos los toros separadas por espacio");
             for (int i2=0; i2<Ntoros; i2++){         
-                if (Ntoros>1){
+                if (Ntoros>=1){
                     Vtoros = teclado.nextInt();
                     if (Vtoros>Vcorredor){
                         Vcorredor=Vtoros;
